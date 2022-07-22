@@ -18,15 +18,29 @@
 // }
 
 
-function pow(x, n) {
-    let result = x;
-    for (let i=1; i < n; i++){
-        result *= x;
-    }
-    return result;
-}
+// function pow(x, n) {
+//     let result = x;
+//     for (let i=1; i < n; i++){
+//         result *= x;
+//     }
+//     return result;
+// }
 
-let x = prompt('Введине Х', '');
-let n = prompt('Введине N', '');
+// let x = prompt('Введине Х', '');
+// let n = prompt('Введине N', '');
 
-alert( pow(x, n) )
+// alert( pow(x, n) )
+
+
+// #5
+
+function ask (question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+  }
+  
+  ask(
+    "Вы согласны?",
+    () => alert("Вы согласились."),
+    () => alert("Вы отменили выполнение.")
+  );

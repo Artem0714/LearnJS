@@ -34,13 +34,77 @@
 
 // #5
 
-function ask (question, yes, no) {
+/*function ask (question, yes, no) {
     if (confirm(question)) yes()
     else no();
   }
   
-  ask(
-    "Вы согласны?",
-    () => alert("Вы согласились."),
-    () => alert("Вы отменили выполнение.")
-  );
+ask(
+"Вы согласны?",
+() => alert("Вы согласились."),
+() => alert("Вы отменили выполнение.")
+);*/
+
+
+//________________
+
+//Objects
+
+/*et obj = {};
+obj.name = 'John';
+obj.surname = 'Smith';
+obj.name = 'Pete';
+delete obj.name;
+alert ( obj.name )*/
+
+
+/*let isEmpty = function(obj) {
+  for (let key in obj){
+    return false
+  }
+  return true
+}
+
+let schedule = {};
+
+alert( isEmpty(schedule) );
+
+schedule["8:30"] = "get up";
+
+alert( isEmpty(schedule) );*/
+
+
+/*let sum = 0 // на этой задаче было потрачено много времени, мой косяк заключался в том что я не присваивал значения переменной sum, поэтому функция неопределялась!
+let SumPrice = function(obj) {
+  for (let key in obj) {
+    sum += obj[key]
+  }
+  return sum
+}
+
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+}
+
+alert ( SumPrice(salaries) )*/
+
+
+/*let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+// Тут фундкция была не верна задана, необходимо имеено функция не требующая возврата(Expression)
+function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == 'number') {
+      obj[key] *= 2;
+    }
+  }
+  alert ( obj.width )
+  alert ( obj.title )
+}
+
+multiplyNumeric(menu)*/

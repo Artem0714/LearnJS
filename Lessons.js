@@ -108,3 +108,47 @@ function multiplyNumeric(obj) {
 }
 
 multiplyNumeric(menu)*/
+
+
+
+
+// ОБЪЕКТЫ. КЛОНИРОВАНИЕ. Object.assign - выполняет не глубокое клонирование объекта. для глубокого клонирования стоит использовать - _.cloneDeep(obj)
+// ОБЪЕКТЫ. Очистка недостижимых объектов. JAvaScript самостоятельно очищает недостижимые объекты.
+
+
+//Создание калькулятора из задач по МЕТОДАМ:
+
+/*let calculator = {
+  read() {
+    this.Number1 = +prompt("Введите первое значение", []);
+    this.Number2 = +prompt("Введите второе значение", []);
+  },
+
+  sum() {
+    return ( (this.Number1) + (this.Number2) )
+  },
+
+  mul() {
+    return ( this.Number1 * this.Number2 )
+  }
+}
+
+alert( calculator.read() );
+alert( calculator.sum() );
+alert( calculator.mul() );*/
+
+
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+  },
+  down() {
+    this.step--;
+  },
+  showStep: function() { // показывает текущую ступеньку
+    alert( this.step );
+  }
+};
+
+alert(ladder.up().up().down().showStep()); // 1
